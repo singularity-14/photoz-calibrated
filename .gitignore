@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+venv/
+
+# Downloaded data. Not committed: it is ~15 MB, and anyone can regenerate it
+# exactly by running `python run_all.py --fetch`, which is the point of pinning
+# the data release and the query.
+data/
+fetch.log
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Keep the figures and metrics.json -- they ARE the result, and a reader
+# should see them without running anything.
+!results/
+!results/*.png
+!results/*.json
+
+# OS noise
+.DS_Store
+Thumbs.db

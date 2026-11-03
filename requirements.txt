@@ -1,0 +1,16 @@
+# Versions pinned to what this project was actually developed and tested against
+# on 2026-11-02 (Python 3.13). Loose pins (>=) would be friendlier to other
+# people's environments, but exact pins mean "the numbers in the README are
+# reproducible", which matters more for a scientific result.
+
+numpy==2.5.4
+scipy==1.18.1
+pandas==3.1.0
+scikit-learn==1.9.1
+matplotlib==3.11.2
+requests==2.34.2
+pytest==9.2.0
+
+# PyTorch CPU build. For the GPU build see https://pytorch.org/get-started/
+# This project trains in well under a minute on CPU, so there is no need for one.
+torch==2.15.0
